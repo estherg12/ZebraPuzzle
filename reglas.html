@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reglas del juego</title>
+  <link rel="stylesheet" href="styles2.css">
+  <link rel="icon" type="image/png" href="esteto.png">
+</head>
+<body>
+  <!-- Botón -->
+  <button id="volver">
+    <svg height="20px" width="20px" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 1024 1024"><path d="M874.690416 495.52477c0 11.2973-9.168824 20.466124-20.466124 20.466124l-604.773963 0 188.083679 188.083679c7.992021 7.992021 7.992021 20.947078 0 28.939099-4.001127 3.990894-9.240455 5.996574-14.46955 5.996574-5.239328 0-10.478655-1.995447-14.479783-5.996574l-223.00912-223.00912c-3.837398-3.837398-5.996574-9.046027-5.996574-14.46955 0-5.433756 2.159176-10.632151 5.996574-14.46955l223.019353-223.029586c7.992021-7.992021 20.957311-7.992021 28.949332 0 7.992021 8.002254 7.992021 20.957311 0 28.949332l-188.073446 188.073446 604.753497 0C865.521592 475.058646 874.690416 484.217237 874.690416 495.52477z"></path></svg>
+  Volver
+  </button>
+
+  <!-- Contenedor principal -->
+  <div class="container">
+    <!-- Div verde con texto -->
+    <div class="green-box">
+      <ul>
+        <li>Utiliza las <b>pistas</b> de debajo de la tabla para encontrar la solución</li>
+        <li>Deberás ir rellenando la información de cada uno de los médicos sentados en cada una de las 6 sillas de forma que siempre se cumplan todas las pistas</li>
+        <li>Cuando una pista no se cumpla, se mostrará en <b><font color="ef9a9a">rojo</b></font></li>
+        <li>Cuando una pista se cumpla por completo, se mostrará en <b><font color="a5d6a7">verde</b></font></li>
+        <li>Para completar el puzzle <b>todas</b> las pistas deben estar en <b><font color="a5d6a7">verde</b></font></li>
+      </ul>
+    </div>
+
+    <!-- Div con video de YouTube -->
+    <div class="video-box">
+      <iframe
+        src="https://www.youtube.com/embed/Qd84SEf6GbM?&loop=1"
+        title="YouTube video player"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen>
+      </iframe>
+    </div>
+  </div>
+
+  <!-- Texto con enlaces -->
+  <div class="text-box">
+    <p>Para practicar con ejemplos más fáciles y de nivel inicial, usa estas páginas:</p>
+    <p>
+      Ejemplo <span class="link" onclick="window.location.href='https://www.zebrapuzzles.com/p/iSYszShF/#very-easy'">fácil</span> para practicar.
+    </p>
+    <p>
+      Ejemplo de dificultad <span class="link" onclick="window.location.href='https://www.zebrapuzzles.com/p/iSYszShF/#easy'">media</span>.
+    </p>
+    <p>
+      Ejemplo de dificultad <span class="link" onclick="window.location.href='https://www.zebrapuzzles.com/p/iSYszShF/#medium'">alta</span>.
+    </p>
+  </div>
+
+  <script src="script2.js"></script>
+</body>
+</html>

@@ -1,0 +1,113 @@
+/* Estilos generales */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f9f9f5;
+    color: #2c3e50;
+    margin: 0;
+    padding: 10px;
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /* Botón */
+  button {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    height: 3em;
+    width: 100px;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffff;
+    border-radius: 25px;
+    letter-spacing: 1px;
+    transition: all 0.2s linear;
+    cursor: pointer;
+    border: none;
+    background: #81c784;
+  }
+
+  button > svg {
+    margin-right: 5px;
+    margin-left: 5px;
+    font-size: 20px;
+    transition: all 0.4s ease-in;
+   }
+
+   button:hover > svg {
+    font-size: 1.2em;
+    transform: translateX(-5px);
+   }
+   
+   button:hover {
+    box-shadow: 9px 9px 33px #d1d1d1, -9px -9px 33px #ffffff;
+    transform: translateY(-2px);
+   }
+
+  button:hover {
+    background-color: #48a94d;
+  }
+
+  /* Contenedor de los divs */
+  .container {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin-top: 20px;
+  }
+
+  /* Div verde con texto */
+  .green-box {
+    background-color: #e8f5e9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 45%;
+  }
+
+  .green-box ul {
+    list-style-type: disc;
+    padding-left: 20px;
+  }
+
+  .green-box ul li {
+    font-size: 14px;
+    margin-bottom: 5px;
+  }
+
+  .green-box ul li b {
+    color: #2c3e50;
+  }
+
+  /* Div con video de YouTube */
+  .video-box {
+    width: 45%;
+    text-align: center;
+  }
+
+  .video-box iframe {
+    width: 80.5%;
+    height: 200px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+
+  /* Texto con enlaces */
+  .text-box {
+    margin-top: 20px;
+    text-align: center;
+  }
+
+  .text-box p {
+    font-size: 14px;
+    margin: 10px 0;
+  }
+
+  .text-box .link {
+    color: #48a94d;
+    font-weight: bold;
+    text-decoration: underline;
+    cursor: pointer;
+  }

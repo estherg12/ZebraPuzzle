@@ -1,0 +1,171 @@
+/* Estilo general */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f9f9f5;
+  color: #2c5030;
+  margin: 0;
+  padding: 10px;
+  line-height: 1.3;
+}
+
+h2 {
+  text-align: center;
+  color: #2c5030;
+  background-color: #e8f5e9;
+  padding: 8px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Tabla */
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin: 10px 0;
+  padding: 10px;
+  background-color: #ffffff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+th, td {
+  text-align: center;
+  padding: 6px;
+  border-bottom: 1px solid #ddd;
+  font-size: 12px;
+}
+
+th {
+  background-color: #a5d6a7;
+  color: #2c3e50;
+  font-weight: bold;
+}
+
+tr:nth-child(even) {
+  background-color: #f4f4f4;
+}
+
+tr:hover {
+  background-color: #e8f5e9;
+}
+
+select {
+  padding: 3px;
+  border: 0.8px solid #a5d6a7;
+  border-radius: 5px;
+  background-color: #ffffff;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.1);
+  font-size: 10px;
+}
+
+/* Consultas */
+.consultas-container {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  padding: 13px;
+  justify-content: space-between;
+}
+
+.consultas {
+  width: 32%; /* Ocupa un tercio del ancho */
+  max-width: 32%;
+  flex-grow: 1; /* Distribuir espacio equitativamente */
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.consulta {
+  margin: 5px 0;
+  padding: 12px;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  font-size: 10px;
+  background-color: #ffffff;
+}
+
+.consulta.correcto {
+  background-color: #a5d6a7;
+  color: #2c3e50;
+  text-decoration: line-through;
+}
+
+.consulta.incorrecto {
+  background-color: #ef9a9a;
+  color: #2c3e50;
+}
+
+.consulta.normal {
+  background-color: #f9f9f5;
+  color: #2c3e50;
+}
+
+.consulta span {
+  font-weight: bold;
+  margin-right: 7px;
+}
+
+/* Botones */
+button {
+  display: inline-block;
+  justify-content: center;
+  align-items: center;
+  padding: 5px 10px;
+  gap: 6px;
+  background-color: #81c784;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 12px;
+  transition: background-color 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.lable {
+  line-height: 10px;
+  font-size: 10px;
+  color: #2c3e50;
+  letter-spacing: 1px;
+}
+
+.repeat:hover .svg-icon {
+  animation: spin 2s linear infinite;
+}
+
+.repeat 
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px 10px;
+  gap: 6px;
+  height: 30px;
+  width: 95px;
+  border: none;
+  background: #81c784;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(-360deg);
+  }
+}
+
+button:hover {
+  background-color: #48a94d;
+}
+
+.repeat:hover {
+  background-color: #48a94d;
+  transform: scale(1.05);
+  transition: transform 0.5s ease;
+}
